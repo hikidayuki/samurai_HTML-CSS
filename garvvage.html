@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel ="stylesheet" href ="trush.css">
+</head>
+<body>
+    
+    
+    <h1>お申し込みフォーム</h1>
+    <form id = "form1" class = "outer" >
+        <p>お名前：</p>
+        <input type ="text" name = "yourname"/>
+        <p>電話番号:</p>
+        <input type ="text" name ="phonenum"/>
+        <p>年齢:</p>
+        <div id ="radio1">
+         <input type ="radio" name ="age" value ="20" id="20"/><label>20代</label>
+        <input type ="radio" name ="age" value ="30"id="30"/><label>30代</label>
+        <input type ="radio" name ="age" value ="40"id="40"/><label>40代</label>
+        <input type ="radio" name ="age" value ="50"id ="50"/><label>50代</label>
+        </div>
+         <button id ="btn">送信</button>
+    </form> 
+    
+     <script>
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click',()=>{
+     const data1 = document.forms.form1;
+     const data2 = document.forms.form2;
+     console.log(data1.yourname.value);
+     console.log(data1.phonenum.value);
+     console.log(data1.age.value);
+     
+    } );
+     
+    /* data2.kind.forEach((el)=>{
+     if(el.checked){
+     console.log(el.value);     
+     }  //if  
+         
+     }) ; //data2 */ 
+    //} );//addEventListener
+        
+   
+    </script>
+</body>
+</html>

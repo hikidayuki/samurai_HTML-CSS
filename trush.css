@@ -1,0 +1,47 @@
+@charset"UTF-8";
+
+body{
+background-image:url("pictures/DeepSea.jpeg");
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+input[type=radio]+label{
+color:white;
+}
+
+input[type=checkbox]+label{
+color:white;    
+}
+
+.outer{
+position:relative;
+top:100px;
+}
+
+h1{
+color:white;
+text-align:center;
+}
+
+p{
+color:white;    
+}
+
+button{
+position:relative;
+top:20px;
+}
+#form1{
+ display:grid;  
+ grid-template-columns:100px 300px;
+ justify-content:center;
+}
+#form2{
+text-align:center;    
+}
+
+#radio1{
+position:relative;
+top:15px;
+}

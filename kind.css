@@ -1,0 +1,62 @@
+@charset"UTF-8";
+
+
+    
+
+
+body{
+background-image:url("pictures/DeepSea.jpeg");
+background-size:cover;
+position:relative;
+}
+
+header{
+text-align:center;
+color:white;
+}
+
+/*-----------------menu--------------------*/
+#menu{
+display:grid;    
+grid-template-columns:20% 20% 20% 20% ;
+color:white; 
+text-align:center;
+position:relative;
+top :400px;
+}
+
+#menu a{
+text-decoration:none;
+color:white;
+}
+
+
+a:hover{
+filter:drop-shadow(5px 5px 5px white);    
+}
+/*-------------------------topics-----------*/
+#topics{
+display:grid;    
+grid-template-rows:15% 15% 15% 15%;
+float:left;
+position:relative;
+top:100px;
+margin-left:20px;
+}
+
+#topics h3{
+color:white;    
+}
+
+#topics a{
+text-decoration:none; 
+color:white;
+}
+
+#cont{
+position:relative;
+top:30px;
+}
+
+
+
