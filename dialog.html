@@ -1,0 +1,42 @@
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #battle {
+      border: solid red 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>スキット欄作成</h1>
+  <div id="battle"> </div> <button>>></button>
+  <script>
+    const h2 = document.createElement('h2');
+    const battle = document.getElementById('battle');
+    const button = document.querySelector('button'); //※←;部分がおかしい
+    h2.textContent = '閲覧ありがとうございます。';
+    battle.appendChild(h2);
+    button.addEventListener('click', () => {
+      h2.textContent = 'わたしは田中です';
+      tool.chat('ご用件はなんでしょうか？');
+      tool.chat('かしこまりました。');
+    });
+    
+    const tool = {
+        
+        putin:function(content){
+        h2.textContent =content ;    
+        },
+        
+        chat: function(topic) {
+          button.addEventListener('click', tool.putin(topic));
+          
+        }
+    } ;//※←閉じ忘れがある
+  </script>
+</body>
+
+</html>
